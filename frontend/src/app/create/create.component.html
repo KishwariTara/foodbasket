@@ -1,0 +1,139 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>FoodBox</title>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+     
+        <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="color:red">Food Box</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Register</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">contact US</a>
+                  </li>
+                
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+          <div class="container mt-5">
+          <h1>User Management</h1>
+          <a routerLink="./create" class="btn btn-success">Create</a>
+          &nbsp;
+         <a routerLink="./read" class="btn btn-success">Read</a>
+       </div>
+
+<div class="container mt-5">
+  <!--show errormsg-->
+  <div *ngIf="errormsg" class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>{{errormsg}}</strong> 
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  <div *ngIf="successmsg" class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>{{successmsg}}</strong> 
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+    <form [formGroup]="userForm" (ngSubmit)="userSubmit()">
+      <div class="col-lg-6 mt-2">
+      <input type ="text" class="form-control" formControlName="fullname" placeholder="Enter Full Name">
+      </div>
+
+      <div class="col-lg-6 mt-2">
+        <input type ="text" class="form-control" formControlName="email"  placeholder="Enter Email">
+        </div>
+
+        <div class="col-lg-6 mt-2">
+          <input type ="text" class="form-control" formControlName="mobile"  placeholder="Enter Mobile Number">
+          </div>
+
+          <div  class="col-lg-4 mt-2">
+            <button class="btn btn-primary">Submit</button>
+          </div>
+    </form>
+</div>
+ <!--footer section-->
+ <main>
+  upper text
+ </main>
+  <footer class="footer">
+  
+    <div class="col">
+      <h2>Contact</h2>
+      <ul class="box">
+        <li>132, Sidcup Lane</li>
+        <li>PS15 MA12, Bromley</li>
+        <li>London, UK</li>
+        <li>www.yourwebsite.com</li>
+        <li>000 123 456 7890</li>
+      </ul>
+    </div>
+    
+    <div class="col">
+    
+        <h2>Useful Link</h2>
+        <ul class="box h-box">
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Teams</a></li>
+          <li><a href="#">About US</a></li>
+        </ul>
+    </div>
+      
+
+    <div class="col">
+        <h2>Recent Post</h2>
+      <ul class="box">
+          <li><a href="#">Fresh and Tasty Food</a></li>
+          <li><a href="#">Fresh and Tasty Food</a></li>
+          <li><a href="#">Fresh and Tasty Food</a></li>
+          <li><a href="#">Fresh and Tasty Food</a></li>
+          <li><a href="#">Fresh and Tasty Food</a></li>
+          <li><a href="#">Fresh and Tasty Food</a></li>
+        </ul>
+      </div>
+      <div class="col">
+      
+        <h2>Newletter</h2>
+        <form action="" class="form-search">
+          <div class="search-box">
+            <input type="text" name="" id="">
+            &nbsp;
+            <button class="btn" type="submit">Search</button>
+          </div>
+        </form>
+    <div class="footer-bottom">
+      <p>All Right reserved by &copy;creation @2022</p>
+    </div>
+    </div>
+  </footer>
+</body>
+</html>
+

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FoodBox</title>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+</head>
+<body>
+
+        <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="color:red">Food Box</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Register</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" routerLink="./create">contact US</a>
+                  </li>
+                  
+                
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/burger1.jpg" class="d-block w-70" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/chaumin1.jpg" class="d-block w-70" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/pasta1.jpg" class="d-block w-70" alt="...">
+              </div>
+            </div>
+          </div>
+          <h1></h1>
+          <h1 style="text-align:center">Our Services</h1>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card">
+                <img src="./assets/bread.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Bread</h5>
+                  <p class="card-text"> Price : $20</p>
+                  <a type="button" class="btn btn-primary" routerLink="./details">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col">
+              <div class="card">
+                <img src="./assets/burger.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Burger</h5>
+                  <p class="card-text">Price : $20</p>
+                  <button type="button" class="btn btn-primary">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="./assets/chaumin2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Noodles</h5>
+                  <p class="card-text">Price: $30</p>
+                  <button type="button" class="btn btn-primary">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="./assets/momos.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Momos</h5>
+                  <p class="card-text">Price: $40</p>
+                  <button type="button" class="btn btn-primary">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                  <img src="./assets/egg.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Egg</h5>
+                    <p class="card-text">Price: $10</p>
+                    <button type="button" class="btn btn-primary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="./assets/pasta.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Pasta</h5>
+                    <p class="card-text">Price: $40</p>
+                    <button type="button" class="btn btn-primary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="./assets/dew.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Dew</h5>
+                    <p class="card-text">Price: $40</p>
+                    <button type="button" class="btn btn-primary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="./assets/sprite.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Sprite</h5>
+                    <p class="card-text">Price: $40</p>
+                    <button type="button" class="btn btn-primary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="./assets/thumpsUP.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">ThumpsUP</h5>
+                    <p class="card-text">Price: $40</p>
+                    <button type="button" class="btn btn-primary">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+          </div>
+      <!--footer section-->
+     <main>
+      upper text
+     </main>
+      <footer class="footer">
+      
+        <div class="col">
+          <h2>Contact</h2>
+          <ul class="box">
+            <li>132, Sidcup Lane</li>
+            <li>PS15 MA12, Bromley</li>
+            <li>London, UK</li>
+            <li>www.yourwebsite.com</li>
+            <li>000 123 456 7890</li>
+          </ul>
+        </div>
+        
+        <div class="col">
+        
+            <h2>Useful Link</h2>
+            <ul class="box h-box">
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Teams</a></li>
+              <li><a href="#">About US</a></li>
+            </ul>
+        </div>
+          
+
+        <div class="col">
+            <h2>Recent Post</h2>
+          <ul class="box">
+              <li><a href="#">Fresh and Tasty Food</a></li>
+              <li><a href="#">Fresh and Tasty Food</a></li>
+              <li><a href="#">Fresh and Tasty Food</a></li>
+              <li><a href="#">Fresh and Tasty Food</a></li>
+              <li><a href="#">Fresh and Tasty Food</a></li>
+              <li><a href="#">Fresh and Tasty Food</a></li>
+            </ul>
+          </div>
+          <div class="col">
+          
+            <h2>Newletter</h2>
+            <form action="" class="form-search">
+              <div class="search-box">
+                <input type="text" name="" id="">
+                &nbsp;
+                <button class="btn" type="submit">Search</button>
+              </div>
+            </form>
+        <div class="footer-bottom">
+          <p>All Right reserved by &copy;creation @2022</p>
+        </div>
+        </div>
+      </footer>
+  
+
+</body>
+</html>
+
